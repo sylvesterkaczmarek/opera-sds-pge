@@ -1,0 +1,41 @@
+{
+  "issue": 823,
+  "issue_url": "https://github.com/nasa/opera-sds-pge/issues/823",
+  "base": "5d56eae094382bc9207759189461901ffdb4ebc3",
+  "base_branch": "main",
+  "sha": "0fe3a174e3552f0aad3db03c931ffa7590553b94",
+  "branch": "fix/utc-log-timestamps-20260926",
+  "paths": [
+    "src/opera/util/time.py",
+    "src/opera/test/util/test_time_utc.py"
+  ],
+  "title": "Generate current PGE log timestamps in UTC",
+  "kind": "pge",
+  "groups": [
+    {
+      "name": "pge",
+      "cwd": ".",
+      "tests": [
+        "src/opera/test/util/test_time.py",
+        "src/opera/test/util/test_time_utc.py",
+        "src/opera/test/util/test_logger.py",
+        "src/opera/test/util/test_run_utils.py",
+        "src/opera/test/util/test_usage_metrics.py",
+        "src/opera/test/util/test_dataset_utils.py"
+      ],
+      "new_tests": [
+        "src/opera/test/util/test_time_utc.py"
+      ],
+      "source_files": [
+        "src/opera/util/time.py"
+      ],
+      "lint_files": [
+        "src/opera/util/time.py",
+        "src/opera/test/util/test_time_utc.py"
+      ],
+      "summary": "38 passed",
+      "baseline_summary": "10 failed, 3 passed"
+    }
+  ],
+  "final_summary": "38 selected utility/logger tests passed; ten original failures and three controls reproduced."
+}
